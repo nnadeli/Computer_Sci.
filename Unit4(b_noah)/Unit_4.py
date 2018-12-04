@@ -191,3 +191,57 @@ Scatter Charts
 
 Show uneven intervals or data clusters.
 '''
+
+
+'''Day 6        Dec 3'''
+
+from tkinter import *
+import tkinter
+root = Tk() # initialize base window
+root.geometry('300x300') # dimensions of window
+root.title('My first Tkinter project')
+#adds a title to the root window
+l=Label(root, text = 'Hello World') # create label
+l.pack(side = TOP) # places label object in root window
+root.mainloop() # holds view in place
+
+from tkinter import *
+import tkinter
+root = Tk() # initialize base window
+root.geometry('300x300') # dimensions of window
+def buttonFunction():
+    print('Hello World!')
+b1 = Button(root, text = 'Click me!', command = buttonFunction)
+# create button
+b1.pack(side = LEFT) # places button object in root window
+b2 = Button(root, text = 'Click me!', command = buttonFunction)
+# create button
+b2.pack(side = RIGHT) # places button object in root window
+root.mainloop() # holds view in place
+
+from tkinter import *
+import tkinter
+def hello():
+    print('Hello!')
+def goodbye():
+    print('Goodbye!')
+root = Tk() # initialize base window
+root.geometry('300x300') # dimensions of window
+menubutton = Menubutton(root, text = 'this is a menu') #create
+menubutton.menu = Menu(menubutton) #initialize menu
+menubutton['Menu'] = menubutton.menu #associates menubutton with
+menubutton.menu.add_command(label = 'option1', command = hello)
+menubutton.menu.add_command(label = 'option2', command = goodbye)
+menubutton.pack()
+root.mainloop() # holds view in place
+
+from tkinter import *
+import tkinter
+root = Tk() # initialize base window
+root.geometry('300x300') # dimensions of window
+v=tkinter.IntVar()
+radioButton1 = Radiobutton(root, variable = v, value = 0, text = 'It is good', command = lambda : print(v.get()))
+radioButton2 = Radiobutton(root, variable = v, value = 1, text = 'It is good', command = lambda : print(v.get()))
+radioButton1.pack()
+radioButton2.pack()
+root.mainloop() # holds view in place
