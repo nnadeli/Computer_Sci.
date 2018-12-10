@@ -245,3 +245,15 @@ radioButton2 = Radiobutton(root, variable = v, value = 1, text = 'It is good', c
 radioButton1.pack()
 radioButton2.pack()
 root.mainloop() # holds view in place
+
+
+'''Day 7        Dec 6'''
+sudo install pygame
+import pygame
+pygame.init()
+(6, 0)
+pygame.mixer.music.load('1114.wav')
+pygame.mixer.music.play(0)
+pygame.mixer.music.play(10)
+pygame.mixer.music.load('0999.wav')
+pygame.mixer.music.play(0)
