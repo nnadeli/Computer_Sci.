@@ -1,0 +1,92 @@
+'''String Formatting'''
+
+name = 'Noah'           #= is the assignment
+print(len(name))
+print(name.upper())
+print(name.lower())
+
+#Slicing
+print(name[1:3])        #The first letter is 0
+print(name[1:])         #Goes to the end
+
+
+'''List, Tuple, Set, Dictionary'''
+
+List = [1, 2, 3, 4]
+#Order Matters.
+#Can be Changed.
+#Can Have Duplicates
+List.append()
+
+Tuple = (1, 2, 3, 4)
+#Order Matters.
+#Cannot be Changed.
+#Can Have Duplicates
+
+Set = {1, 2, 3, 4}
+#No Order.
+#Can be Changed
+#No Duplicates
+Set.add()
+
+Dictionary = {1:a, 2:b, 3:c}
+#No Order (Although Keys Come Before :).
+#Can be Changed
+#Cannot Have Duplicates Keys but Different Keys Might Have the Same Thing
+Dictionary[''] =
+
+
+'''File I/O (Open, Close, Write, Read/Write/Append, etc)'''
+
+f = open('filename.txt', 'r')
+#Opens the file
+#'r' means reading which prepares the file
+#'a' means append [adds to end of the file]
+text = f.read()
+#This saves the file to the variable 'text'
+f.close()
+
+f = open('filename.txt', 'w')
+#Opens the file
+#'w' means writing which clears the file to be re-written with something else.
+f.write('This is now written on the file.')
+f.close()
+
+f = open('filename.txt', 'a')
+#Opens the file
+#'a' means append which adds to end of the file.
+f.write('This is written at the end of the file')
+#There is no f.append()
+f.close()
+
+
+'''If/Elif/Else'''
+
+x = int(input('How old are you?'))
+if x >= 19:                                         #The x >= 19 is a boolean
+    print('You can buy liquor.')
+elif x == 18:
+    print('You can buy lotto but not liquor.')
+else:
+    print('Leave the store.')
+
+'''True or False statements
+>=
+>
+<=
+<
+==
+!=
+'''
+
+'''Loops'''
+
+for x in range(1, 11, 2):
+    print(x)
+#Prints numbers from the first number upto the second number but not including.
+#The third number  determines by how much it goes up by.
+
+x = 1
+while (x < 11):
+    print(x)
+    x = x + 1
